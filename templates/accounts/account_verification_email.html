@@ -1,0 +1,11 @@
+{% autoescape off %}
+
+hi {{ user.first_name }},
+
+Please click on below link to confirm registration
+
+http://{{domain}}{% url 'accounts:activate' uidb64=uid token=token %}
+
+If you think it's not you, Please ignore this email.
+
+{% endautoescape %}
