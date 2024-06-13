@@ -163,6 +163,8 @@ def remove_cart_item(request, product_id, cart_item_id):
     return redirect('carts:cart')
 
 def cart(request, total=0, quantity=0, cart_items=None):
+    tax = 0
+    grand_total = 0
     try:
         if request.user.is_authenticated:
             cart_items = CartItem.objects.filter(user=request.user, is_active=True)
