@@ -1,4 +1,4 @@
-#!D:\SEM 4\GreatKart\env\Scripts\python.exe
+#!D:\College\SEM 4\greatKart\env\Scripts\python.exe
 
 import sys
 import json
